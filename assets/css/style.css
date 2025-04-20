@@ -1,0 +1,948 @@
+@font-face {
+    font-family: 'boldFont';
+    src: url(../font/ArchivoBlack-Regular.ttf) format('truetype');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: ltr;
+}
+
+header {
+    background-color: white;
+    padding: 0 75px;
+    position: relative;
+}
+
+header > a img {
+    width: 100%;
+}
+
+header > a:nth-child(2) img {
+    width: 80%;
+}
+
+header > a:nth-child(2) {
+    position: relative;
+}
+
+header > a:nth-child(2) p {
+    position: absolute;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px #777;
+    color: #333;
+    background-color: white;
+    width: 75%;
+    top: 85%;
+    box-sizing: border-box;
+    padding: 2px;
+    right: 21%;
+    display: none;
+    margin: 0;
+    text-align: center;
+    z-index: 10;
+    font-size: 0.8em;
+}
+
+header > a:nth-child(2):hover p {
+    display: block;
+} 
+
+header nav ul {
+    padding: 0;
+}
+
+header > a:nth-child(2)::before {
+    position: absolute;
+    content: '|';
+    color: black;
+    left: -10%;
+}
+
+header > a {
+    width: 8%;
+    display: inline-block;
+    padding: 16px 10px;
+    box-sizing: border-box;
+    margin: 0 0.5%;
+}
+
+header nav {
+    width: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+header nav ul li {
+    display: inline;
+    list-style: none;
+}
+
+header nav ul li a {
+    font-size: 0.8em;
+    color: black;
+    padding: 12px 8px 5px 8px;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid black;
+}
+
+header ul li a{
+    color: #262626;
+    text-decoration: none;
+}
+
+header div ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+header div ul li a {
+    padding: 16px 10px 5px 10px;
+    font-size: 0.9em;
+}
+
+header div {
+    position: absolute;
+    top: 0;
+    right: 75px;
+}
+
+header div ul li:first-child a i {
+    font-size: 0.7em !important;
+}
+
+header div ul li a:hover {
+    border-bottom: 2px solid black;
+}
+
+header div ul li:last-child a:hover {
+    border: none;
+}
+
+#search {
+    position: relative;
+}
+
+#search a p {
+    position: absolute;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px #777;
+    color: #333;
+    background-color: white;
+    width: 170%;
+    top: 130%;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    padding: 2px;
+    right: 0;
+    display: none;
+    margin: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+#search a:hover p {
+    display: block;
+}
+
+#cart {
+    position: relative;
+}
+
+#cart a p {
+    position: absolute;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px #777;
+    color: #333;
+    background-color: white;
+    width: 230%;
+    top: 130%;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    padding: 2px;
+    left: 0;
+    display: none;
+    margin: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+#cart a:hover p {
+    display: block;
+}
+
+.banner {
+    position: relative;
+    margin: 5px 0;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner section {
+    position: absolute;
+    padding: 0 50px;
+    top: 20%;
+    width: 35%;
+}
+
+.banner section h2 {
+    color: white;
+    font-size: 2.7em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner section p {
+    margin-bottom: 25px;
+    color: white;
+    font-size: 2.2em;
+   margin-top: 10px;
+}
+
+.banner section a {
+    font-family: 'boldFont';
+    background-color: #9bf00b;
+    color: #054b16;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: all 400ms;
+    box-sizing: border-box;
+}
+
+.banner section a:hover {
+    background-color: #8bd80a;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    transition: all 400ms;
+}
+
+.banner section a span {
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+    width: auto;
+    transition: all 400ms;
+}
+
+.banner section a:hover span {
+    transform: translateX(-5px);
+    border-bottom: 2px solid #054b16;
+    transition: all 400ms;
+}
+
+
+.banner section a i {
+    display: inline-block;
+    transition: all 400ms;
+}
+
+.banner section a:hover i {
+    transform: translateX(5px);
+    transition: all 400ms;
+}
+
+#slide section {
+    left: 75px;
+}
+
+#banner1 {
+    padding: 0 5px;
+}
+
+#banner1 section {
+    top: 27%;
+    left: 75px;
+}
+
+#banner1 section p {
+    font-size: 1.5em;
+}
+
+#products {
+    padding: 0 75px;
+    margin-top: 50px;
+}
+
+#products ul {
+    display: flex;
+    padding: 0 20%;
+}
+
+#products ul li {
+    list-style: none;
+    width: 13%;
+    margin-right: 4.4%;
+    text-align: center;
+}
+
+#products ul li:last-child {
+    margin-right: 0;
+}
+
+#products ul li a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+#products ul li a img {
+    text-align: center;
+    width: 75%;
+}
+
+#products ul li a p {
+    font-family: 'boldFont';
+    color: #107c10;
+    font-size: 0.8em;
+    margin-top: 0;
+    box-sizing: border-box;
+    border-bottom: 3px solid transparent;
+    transition: all 300ms;
+}
+
+#products ul li a:hover p {
+    border-bottom: 3px solid #107c10;
+    transition: all 300ms;
+}
+
+#box {
+    display: flex;
+}
+
+#box > div {
+    width: 50%;
+}
+
+#box > div section a img {
+    width: 100%;
+}
+
+#box > div > section {
+    padding: 5px;
+    position: relative;
+}
+
+#box > div > section > a img {
+    display: block;
+}
+
+#box > div section div {
+    position: absolute;
+    bottom: 10%;
+    left: 50px;
+    color: white;
+}
+
+#box > div section div a {
+    font-family: 'boldFont';
+    color: white;
+    text-decoration: none;
+}
+
+#box > div section div h2 {
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+#box > div section div p {
+    font-size: 1.2em;
+}
+
+#box > div:first-child > section:last-child {
+    height: 60vh;
+    display: flex;
+}
+
+#box > div:first-child > section:last-child a {
+    width: 50%;
+    overflow: hidden;
+}
+
+#box > div:first-child > section:last-child a img {
+    width: 100%;
+    height: 100%;
+    transition: all 400ms;
+
+}
+
+#box > div:first-child > section:last-child a img:hover {
+    transform: scale(1.1);
+    transition: all 400ms;
+}
+
+#box > div:first-child > section:last-child div {
+    width: 50%;
+    background-color: #107c10;
+    height: 100%;
+    position: static;
+    padding: 19% 40px;
+    box-sizing: border-box;
+}
+
+#box > div:first-child > section:last-child div h2 {
+    font-size: 1.7em;
+    margin: 0;
+}
+
+#box > div:last-child > section:first-child {
+    height: 60vh;
+    display: flex;
+}
+
+#box > div:last-child > section:first-child a {
+    width: 50%;
+    overflow: hidden;
+}
+
+#box > div:last-child > section:first-child a img {
+    width: 100%;
+    height: 100%;
+    transition: all 400ms;
+
+}
+
+#box > div:last-child > section:first-child a img:hover {
+    transform: scale(1.1);
+    transition: all 400ms;
+}
+
+#box > div:last-child > section:first-child div {
+    width: 50%;
+    background-color: #107c10;
+    height: 100%;
+    position: static;
+    padding: 15% 40px;
+    box-sizing: border-box;
+}
+
+#box div:first-child section:first-child div a span {
+    border-bottom: 2px solid transparent;
+    transition: all 400ms;
+}
+
+#box div:first-child section:first-child div a:hover span {
+    border-bottom: 2px solid #9bf00b;
+    box-sizing: border-box;
+    transition: all 400MS;
+}
+
+#box div:first-child section:first-child div a:hover {
+    color: #9bf00b;
+}
+
+#box div:first-child section:first-child div a i {
+    transition: all 400MS;
+}
+
+#box div:first-child section:first-child div a:hover i {
+    transform: translateX(5px);
+    transition: all 400MS;
+}
+
+#box > div:last-child > section:first-child div h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#box div:last-child section:first-child div a span {
+    border-bottom: 2px solid transparent;
+    transition: all 400ms;
+}
+
+#box div:last-child section:first-child div a:hover span {
+    border-bottom: 2px solid #fff;
+    box-sizing: border-box;
+    transition: all 400MS;
+}
+
+#box div:last-child section:first-child div a i {
+    transition: all 400MS;
+}
+
+#box div:last-child section:first-child div a:hover i {
+    transform: translateX(5px);
+    transition: all 400MS;
+}
+
+#box div:last-child section:last-child div a span {
+    border-bottom: 2px solid transparent;
+    transition: all 400ms;
+}
+
+#box div:last-child section:last-child div a:hover span {
+    border-bottom: 2px solid #9bf00b;
+    box-sizing: border-box;
+    transition: all 400MS;
+}
+
+#box div:last-child section:last-child div a:hover {
+    color: #9bf00b;
+}
+
+#box div:last-child section:last-child div a i {
+    transition: all 400MS;
+}
+
+#box div:last-child section:last-child div a:hover i {
+    transform: translateX(5px);
+    transition: all 400MS;
+}
+
+#box div:first-child section:last-child div a span {
+    border-bottom: 2px solid transparent;
+    transition: all 400ms;
+}
+
+#box div:first-child section:last-child div a:hover span {
+    border-bottom: 2px solid #fff;
+    box-sizing: border-box;
+    transition: all 400MS;
+}
+
+#box div:first-child section:last-child div a i {
+    transition: all 400MS;
+}
+
+#box div:first-child section:last-child div a:hover i {
+    transform: translateX(5px);
+    transition: all 400MS;
+}
+
+.box {
+    display: flex;
+}
+
+.box section {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 60vh;
+    display: flex;
+}
+
+.box section a {
+    width: 50%;
+    overflow: hidden;
+}
+
+.box section a img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 400ms;
+}
+
+.box section a img:hover {
+    transform: scale(1.1);
+    transition: all 400ms;
+}
+
+.box section div {
+    width: 50%;
+    background-color: #107c10;
+    height: 100%;
+    position: static;
+    padding: 17% 40px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.box div h2 {
+    font-size: 1.7em;
+    margin: 0;
+}
+
+.box section:first-child div {
+    padding-top: 15%;
+}
+
+.box section div p {
+    font-size: 1.3em;
+}
+
+.box section div a {
+    color: white;
+    text-decoration: none;
+    font-family: 'boldFont';
+    transition: all 400ms;
+}
+
+.box section div a span {
+    border-bottom: 2px solid transparent;
+    transform: all 400ms;
+}
+
+.box section div a:hover span {
+    border-bottom: 2px solid #fff;
+    box-sizing: border-box;
+    transition: all 400MS;
+}
+
+.box section div a i {
+    transition: all 400MS;
+}
+
+.box section div a:hover i {
+    transform: translateX(5px);
+    transition: all 400MS;
+}
+
+#box1 section:first-child div {
+    padding: 12% 40px;
+}
+
+#box1 section:first-child div h2 {
+    font-size: 1.6em;
+}
+
+#box2 {
+    display: flex;
+}
+
+#box2 > div {
+    width: 50%;
+}
+
+#box2 > div section a img {
+    width: 100%;
+}
+
+#box2 > div > section {
+    padding: 5px;
+    position: relative;
+}
+
+#box2 > div > section > a img {
+    display: block;
+}
+
+#box2 > div section div {
+    position: absolute;
+    bottom: 10%;
+    left: 50px;
+    color: white;
+}
+
+#box2 > div:first-child section:first-child div {
+    color: black;
+}
+
+#box2 > div:last-child section:last-child div  {
+    color: black;
+}
+
+#box2 > div section div a {
+    font-family: 'boldFont';
+    color: white;
+    text-decoration: none;
+}
+
+#box2 > div:first-child section:first-child div a {
+    color: black;
+}
+
+#box2 > div:last-child section:last-child div  {
+    color: black;
+}
+
+#box2 > div section div h2 {
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+#box2 > div section div p {
+    font-size: 1.2em;
+}
+
+#box2 > div:first-child > section:first-child {
+    height: 60vh;
+    display: flex;
+}
+
+#box2 > div:first-child > section:first-child a {
+    width: 50%;
+    overflow: hidden;
+}
+
+#box2 > div:first-child > section:first-child a img {
+    width: 100%;
+    height: 100%;
+    transition: all 400ms;
+
+}
+
+#box2 > div:first-child > section:first-child a img:hover {
+    transform: scale(1.1);
+    transition: all 400ms;
+}
+
+#box2 > div:first-child > section:first-child div {
+    width: 50%;
+    background-color: #fff;
+    height: 100%;
+    position: static;
+    padding: 17% 40px;
+    box-sizing: border-box;
+}
+
+#box2 > div:first-child > section:first-child div h2 {
+    font-size: 1.7em;
+    margin: 0;
+}
+
+#box2 > div:last-child > section:last-child {
+    height: 60vh;
+    display: flex;
+}
+
+#box2 > div:last-child > section:last-child a {
+    width: 50%;
+    overflow: hidden;
+}
+
+#box2 > div:last-child > section:last-child div a {
+    color: black;
+}
+
+#box2 > div:last-child > section:last-child a img {
+    width: 100%;
+    height: 100%;
+    transition: all 400ms;
+}
+
+#box2 > div:last-child > section:last-child a img:hover {
+    transform: scale(1.1);
+    transition: all 400ms;
+}
+
+#box2 > div:last-child > section:last-child div {
+    width: 50%;
+    background-color: #fff;
+    height: 100%;
+    position: static;
+    padding: 19% 40px;
+    box-sizing: border-box;
+}
+
+#box2 div:first-child section:last-child div a span {
+    border-bottom: 2px solid transparent;
+    transition: all 400ms;
+}
+
+#box2 div:first-child section:last-child div a:hover span {
+    border-bottom: 2px solid #9bf00b;
+    box-sizing: border-box;
+    transition: all 400MS;
+}
+
+#box2 div:first-child section:last-child div a:hover {
+    color: #9bf00b;
+}
+
+#box2 div:first-child section:last-child div a i {
+    transition: all 400MS;
+}
+
+#box2 div:last-child section:last-child div a:hover i {
+    transform: translateX(5px);
+    transition: all 400MS;
+}
+
+#box2 > div:last-child > section:last-child div h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#box2 div:last-child section:last-child div a span {
+    border-bottom: 2px solid transparent;
+    transition: all 400ms;
+}
+
+#box2 div:last-child section:last-child div a:hover span {
+    border-bottom: 2px solid #000;
+    box-sizing: border-box;
+    transition: all 400MS;
+}
+
+#box2 div:last-child section:last-child div a i {
+    transition: all 400MS;
+}
+
+#box2 div:last-child section:last-child div a:hover i {
+    transform: translateX(5px);
+    transition: all 400MS;
+}
+
+#box2 div:last-child section:first-child div a span {
+    border-bottom: 2px solid transparent;
+    transition: all 400ms;
+}
+
+#box2 div:last-child section:first-child div a:hover span {
+    border-bottom: 2px solid #9bf00b;
+    box-sizing: border-box;
+    transition: all 400MS;
+}
+
+#box2 div:last-child section:first-child div a:hover {
+    color: #9bf00b;
+}
+
+#box2 div:last-child section:first-child div a i {
+    transition: all 400MS;
+}
+
+#box2 div:last-child section:first-child div a:hover i {
+    transform: translateX(5px);
+    transition: all 400MS;
+}
+
+#box2 div:first-child section:first-child div a span {
+    border-bottom: 2px solid transparent;
+    transition: all 400ms;
+}
+
+#box2 div:first-child section:first-child div a:hover span {
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    transition: all 400MS;
+}
+
+#box2 div:first-child section:first-child div a i {
+    transition: all 400MS;
+}
+
+#box2 div:first-child section:last-child div a:hover i {
+    transform: translateX(5px);
+    transition: all 400MS;
+}
+
+#box2 div:first-child section:first-child div a:hover i {
+    transform: translateX(5px);
+    transition: all 400MS;
+}
+
+#banner2 {
+    padding: 0 5px;
+}
+
+#banner2 section {
+    right: 25px;
+    top: 27%;
+    line-height: 60px;
+}
+
+#banner2 section h2 {
+    color: black;
+    font-size: 2.3em;
+}
+
+#banner2 section p {
+    color: black;
+    font-size: 1.3em;
+}
+
+#banner2 section a {
+    font-size: 1.2em;
+} 
+
+#banner2 section a span {
+    border: none;
+}
+
+#banner2 section a:hover span {
+    border-bottom: none;
+}
+
+#socialMedia {
+    padding: 20px 75px;
+}
+
+#socialMedia h2 {
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+#socialMedia a i {
+    font-size: 25px;
+    color: black;
+}
+
+#socialMedia a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin: 0 15px;
+}
+
+#socialMedia a img {
+    width: 100%;
+}
+
+footer {
+    background-color: #f2f2f2;
+}
+
+footer section {
+    display: flex;
+}
+
+footer section div {
+    width: 20%;
+    padding: 50px;
+}
+
+footer section div h2 {
+    color: #616161;
+}
+
+footer section div a {
+    color: #616161;
+    display: block;
+    text-decoration: none;
+    transition: all 300ms;
+    margin: 15px 0;
+}
+
+footer section div a:hover {
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: underline;
+    transition: all 300ms;
+}
+
+footer ul {
+    padding: 0 20px;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    width: auto;
+    margin: 0 16px;
+}
+
+footer ul li a {
+    color: #616161;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+footer ul li i {
+    color: #616161;
+    transition: all 300ms;
+}
+
+footer ul li:hover a {
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: underline;
+    transition: all 300ms;
+}
